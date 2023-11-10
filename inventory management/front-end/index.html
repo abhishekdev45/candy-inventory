@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Website</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+  <form id="addItemForm">
+    <input type="text" id="candyName" placeholder="Candy Name" required>
+    <input type="text" id="description" placeholder="Description" required>
+    <input type="number" id="price" placeholder="Price" required>
+    <input type="number" id="quantity" placeholder="Quantity" required>
+    <button type="submit" id="addBtn">Add Item</button>
+  </form>
+
+  <table id="itemsTable">
+    <thead>
+      <tr>
+        <th>Candy Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Action1</th>
+        <th>Action2</th>
+        <th>Action3</th>
+      </tr>
+    </thead>
+    <tbody id="itemsBody"></tbody>
+  </table>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+  <script src="/js/script.js"></script>
+
+</body>
+</html>
